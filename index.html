@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>Kenzie Paint</title>
+    <link href="paint.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Kenzie Paint</h1>
+    <div id="controls">
+        <div id="toolbar">
+            <div id="draw" class="selected">&#9998;</div>
+            <div id="fill"></div>
+        </div>
+        <div id="palette">
+            <div style="background: red;"></div>
+            <div style="background: green;"></div>
+            <div style="background: yellow;"></div>
+            <div style="background: purple;"></div>
+            <div style="background: blue;"></div>
+            <div style="background: lightblue;"></div>
+            <div style="background: white;"></div>
+            <div style="background: black;" class="selected"></div>
+        </div>
+        <div id="grid">&#x25A4;</div>
+    </div>
+    
+    <div id="bitmap1" class="bitmap"></div>
+
+    <script src="bitmap.js"></script>
+    <script src="paint.js"></script>
+    <script src="fill.js"></script>
+</body>
+</html>
