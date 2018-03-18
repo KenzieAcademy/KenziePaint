@@ -5,9 +5,10 @@ const toolbar = document.getElementById("toolbar");
 const palette = document.getElementById("palette");
 
 var tool = "draw";
-var paint_color = "black";
+var paint_color = "green";
 
 toolbar.addEventListener("click", function(event) {
+    if(event.target.id === "toolbar") return;
     var cur_selection = toolbar.getElementsByClassName("selected");
     if(cur_selection.length>0) cur_selection[0].classList.remove("selected");
     event.target.classList.add("selected");
@@ -15,6 +16,7 @@ toolbar.addEventListener("click", function(event) {
 });
 
 palette.addEventListener("click", function(event) {
+    if(event.target.id === "palette") return;
     var cur_selection = palette.getElementsByClassName("selected");
     if(cur_selection.length>0) cur_selection[0].classList.remove("selected");
     event.target.classList.add("selected");

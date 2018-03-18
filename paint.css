@@ -11,7 +11,7 @@ h1 {font-family: 'Fredoka One', sans-serif;}
 .bitmap {width: max-content; padding: 2px; border: 1px solid black;}
 
 #controls {display: flex; border: 1px solid black; width: max-content; font-size: 40px;}
-#controls .selected {border: 3px solid black; margin: 2px;}
+#controls .selected {border: 3px solid black; margin: 3px;}
 #toolbar {display: flex; height: 50px; width: max-content;}
 #toolbar div {display: flex; cursor: pointer; width: 38px; height: 38px; border: 1px solid black; margin: 5px; align-items: center; justify-content: center;}
 #fill {background: url('fill.png'); background-size: contain;}
